@@ -1,0 +1,185 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>도미노피자</title><link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&amp;display=swap" rel="stylesheet">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: "Noto Sans KR", sans-serif; color: #222; line-height: 1.6; }
+a { color: inherit; text-decoration: none; }
+img { display: block; width: 100%; }
+header { width: 92%; max-width: 1100px; min-height: 82px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; gap: 40px; }
+.logo { width: 170px; flex-shrink: 0; }
+.logo img { height: auto; }
+nav { display: flex; align-items: center; gap: 42px; font-size: 16px; font-weight: 500; }
+.hero img { width: 100%; height: auto; }
+.promotion { padding: 22px 0 28px; }
+.banner { width: 72%; max-width: 900px; margin: 0 auto; }
+.banner img { border-radius: 10px; box-shadow: 0 3px 12px #ddd; }
+.service { background: #030933; padding: 32px 0 44px; }
+.service h2, .new-menu h2, .video h2 { font-size: 28px; font-weight: 500; text-align: center; line-height: 1.5; margin-bottom: 26px; }
+.service h2, .new-menu h2 { color: #fff; }
+.list { width: 90%; max-width: 1200px; margin: 0 auto; display: flex; gap: 26px; }
+.box { flex: 1; min-width: 0; background: #fff; text-align: center; border-radius: 7px; overflow: hidden; padding-bottom: 22px; }
+.box img { aspect-ratio: 1 / 1.04; object-fit: cover; }
+.box h3 { font-size: 17px; line-height: 1.5; margin: 16px 10px 6px; }
+.box p { font-size: 13px; color: #666; margin: 0 10px; }
+.new-menu { background: #b70000; padding: 28px 0 40px; }
+.menu-left { width: 90%; max-width: 1200px; margin: 0 auto; display: flex; gap: 18px; }
+.card { flex: 1; min-width: 0; }
+.card img { aspect-ratio: 1; object-fit: cover; border-radius: 3px; }
+.video { padding: 42px 4% 20px; }
+.video h2 { margin-bottom: 20px; font-size: 26px; }
+.video-box { width: 70%; max-width: 800px; margin: 0 auto; }
+.video-box video { display: block; width: 100%; aspect-ratio: 16 / 9; background: #111; }
+.promotion2 { width: 88%; max-width: 1180px; margin: 0 auto; padding: 0 0 32px; }
+.banner2 { display: flex; gap: 26px; }
+.banner2 img { width: calc(50% - 13px); height: auto; object-fit: contain; border-radius: 5px; }
+footer { padding: 30px 4% 40px; border-top: 1px solid #eee; background: #fff; }
+.f-wrap { width: 100%; max-width: 1300px; margin: 0 auto; }
+.footer-top { display: flex; align-items: center; gap: 20px; margin-bottom: 22px; }
+.footer-logo { width: 155px; }
+.footer-phone { font-size: 30px; font-weight: 700; }
+.footer-nav { display: flex; flex-wrap: wrap; gap: 10px 22px; margin-bottom: 24px; list-style: none; }
+.footer-nav a { color: #666; font-size: 13px; }
+.footer-nav .bold { color: #222; font-weight: 700; }
+.footer-info { font-size: 12px; color: #888; line-height: 1.9; margin-bottom: 24px; }
+.footer-info span { margin-right: 12px; }
+.copyright { margin-top: 10px; }
+.footer-notice { border-top: 1px solid #eee; padding-top: 18px; font-size: 11px; color: #999; line-height: 1.8; }
+@media (max-width: 760px) {
+ header { flex-wrap: wrap; justify-content: center; gap: 14px; padding: 16px 0; }
+ .logo { width: 145px; }
+ nav { width: 100%; justify-content: center; flex-wrap: wrap; gap: 12px 20px; font-size: 13px; }
+ .banner { width: 90%; }
+ .service, .new-menu { padding: 28px 0; }
+ .service h2, .new-menu h2, .video h2 { font-size: 21px; padding: 0 12px; }
+ .list { flex-wrap: wrap; gap: 18px 4%; }
+ .box { flex: none; width: 48%; }
+ .box h3 { font-size: 15px; margin: 12px 8px 5px; }
+ .box p { font-size: 12px; margin: 0 8px; }
+ .menu-left { flex-wrap: wrap; justify-content: center; gap: 16px 3%; }
+ .card { flex: none; width: 31.3%; }
+ .video { padding-top: 30px; }
+ .video-box { width: 100%; }
+ .banner2 { flex-direction: column; gap: 16px; }
+ .banner2 img { width: 100%; }
+ .footer-phone { font-size: 25px; }
+ .footer-logo { width: 130px; }
+}</style>
+
+</head>
+<body>
+  <header>
+  <div class="logo"><img src="img/로고.jpg" alt="LOGO"></div>
+  <nav><a href="#">메뉴</a><a href="#">e쿠폰</a>
+     <a href="#">상품권 선물</a> <a href="#">이벤트 제휴</a> 
+     <a href="#">더보기</a>
+</nav>
+</header>
+<section class="hero"><img src="img/배너.jpg" alt="도미노피자 주문 프로모션"></section>
+
+<div class="promotion">
+    <div class="banner">
+        <img src="img/이벤트배너3.jpg" alt="무진장 슈림프 스테이크 출시">
+    </div>
+  </div>
+
+ <section class="service">
+     <h2> 도미노피자와 함께 하는 카드 배너 </h2>
+     <div class="list">
+        <div class="box">
+            <img src="img/카드배너1.jpg" alt="내 주변 도미노스팟"> 
+            <h3>내 주변 도미노스팟 1324개 </h3>
+            <p> 지금, 가까운 스팟을 확인해보세요! </p>
+        </div>
+    <div class="box">
+            <img src="img/카드배너2.jpg" alt="도미노 데이">
+            <h3> 도미노 데이</h3>
+            <p>매일매일 특별한 혜택을 만나보세요  </p>
+        </div>
+        <div class="box">
+            <img src="img/카드배너3.jpg" alt="리뷰 이벤트">
+            <h3> 리뷰 이벤트</h3>
+            <p> 리뷰쓰면 다양한 혜택이 쏟아져요 </p>
+        </div>
+        <div class="box">
+            <img src="img/카드배너4.jpg" alt="30분 배달">
+            <h3>30분 배달 </h3>
+            <p> 30분 내 도착을 약속드려요! </p>
+        </div>
+     </div>
+ </section>
+ <section class="new-menu">
+    <h2>New</h2>
+     <div class="menu-left">
+        <div class="card">
+            <img src="img/카드1.png" alt="신메뉴 피자 1">
+        </div>
+        <div class="card">
+            <img src="img/카드2.png" alt="신메뉴 피자 2">
+        </div>
+        <div class="card">
+            <img src="img/카드3.png" alt="신메뉴 피자 3">
+        </div>
+        <div class="card">
+            <img src="img/카드4.png" alt="신메뉴 피자 4">
+        </div>
+        <div class="card">
+            <img src="img/카드5.png" alt="신메뉴 피자 5">
+        </div>
+    </div>
+ </section>
+ <section class="video">
+    <h2>도미노피자 x 무신사 무진장 슈림프 스테이크 신제품 출시!</h2>
+    <div class="video-box">
+    <video src="img/도미노피자.mp4" width="800" controls></video>
+    </div>
+ </section>
+<div class="promotion2">
+    <div class="banner2">
+        <img src="img/이벤트배너.jpg" alt="음료와 사이드 할인 혜택">
+        <img src="img/이벤트배너2 .jpg" alt="앱 결제 추가 할인 혜택">
+  </div>
+</div> 
+<footer>
+<div class="f-wrap">
+<div class="footer-top">
+  <div class="footer-logo"><img src="img/로고.jpg" alt="로고"></div>
+  <div class="footer-phone">1577-3082</div>
+</div>
+
+<ul class="footer-nav">
+  <li><a href="#">이용약관</a></li>
+  <li><a href="#" class="bold">개인정보 처리방침</a></li>
+  <li><a href="#" class="bold">위치기반 서비스</a></li>
+  <li><a href="#">청소년 보호방침</a></li>
+  <li><a href="#">영상정보처리기기 운영관리방침</a></li>
+  <li><a href="#">고객센터</a></li>
+  <li><a href="#">인재채용</a></li>
+  <li><a href="#">가맹점모집</a></li>
+  <li><a href="#">단체주문</a></li>
+</ul>
+<div class="footer-info">
+  <p>
+    <span>06223 서울특별시 강남구 역삼로25길 35(역삼동, 청오큐브타워) 청오디피케이(주)</span>
+    <span>대표이사 : 오광현,김영훈</span>
+  </p>
+  <p>
+    <span>사업자 등록번호: 220-81-03371</span>
+    <span>통신판매업신고: 강남 5064호</span>
+    <span>개인정보 보호책임자 : 윤여진</span>
+    <span>민원 책임자 : 정천감</span>
+  </p>
+  <p>문의 : webmaster@dominos.co.kr</p>
+  <p class="copyright">Copyright © Domino's Pizza. All rights reserved.</p>
+</div>
+<div class="footer-notice">
+  <p>청오디피케이(주)의 사전 서면동의 없이 도미노피자 사이트(PC, 모바일, 앱)의 일체의 정보, 콘텐츠 및 UI 등을 상업적 목적으로 전재, 전송, 스크래핑 등 무단 사용할 수 없습니다.</p>
+  <p>도미노피자에서 판매되는 모든 상품은 청오디피케이(주)에서 책임지고 있습니다.</p>
+</div>
+</div>
+</footer>
+</body>
+</html>
